@@ -26,6 +26,7 @@ The App has 3 REST API Endpoints.
 
 
 **1. Dummy Endpoint**
+
 `GET localhost:8080/hello`
 
 This is primarily to check if the service is up and running. This should return a simple String response.
@@ -33,9 +34,11 @@ This is primarily to check if the service is up and running. This should return 
 
 
 **2. Get Group Detais by Name**
+
 `GET localhost:8080/group?name={group-name}`
 
 Here Group-Name indicates the desired name of the group details desired.
+
 ***Example***
 `GET localhost:8080/group?name=memory`
 
@@ -67,9 +70,11 @@ This should return an Error Response
 
 
 **3. Get Metric Details by Name**
+
 `GET localhost:8080/metric?name={metric-name}`
 
 Here Metric-Name indicares the desired name of the metric desired.
+
 ***Example***
 `GET http://localhost:8080/metric?name=proc.stat.cpu__user_cumulative`
 
