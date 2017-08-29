@@ -18,4 +18,7 @@ public class Result {
 	public String getGroupRelevance() {
 		return groupRelevance;
 	}
+	public String getName() {
+	    return name;
+	}
 }
