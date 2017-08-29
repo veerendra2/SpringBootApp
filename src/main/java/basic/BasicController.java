@@ -30,22 +30,11 @@ public class BasicController {
     }
 
     @RequestMapping("/group")
-    public GroupReport json(@RequestParam(value="name") String groupNameString) {
+    public GroupReport findGroup(@RequestParam(value="name") String groupNameString) {
 
         // read from .json file locally and convert to POJO
         GroupReport groupReport = new GroupReport();
-        Gson gson = new Gson();
-        JsonReader reader = null;
-
-        try {
-            reader = new JsonReader(new FileReader(JSON_PATH));
-            System.out.println(reader.toString());
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-        }
-
-        // pick the group that is requested
-        Output data = gson.fromJson(reader, Output.class);
+        Output data = convertJson(JSON_PATH);
         List<Group> groups = data.getResults();
 
         for (Group group : groups) {
@@ -74,5 +63,40 @@ public class BasicController {
         error.setErrorCode(404);
         groupReport.setError(error);
         return groupReport;
+    }
+
+    @RequestMapping("/metric")
+    public Metric findMetric(@RequestParam(value="name") String metricName) {
+
+        // read from .json file locally and convert to POJO
+        Output data = convertJson(JSON_PATH);
+        List<Group> groups = data.getResults();
+        for (Group group : groups) {
+            List<Metric> metrics = group.getMetricList();
+            for (Metric metric : metrics) {
+                if (metric.getMetricName().compareTo(metricName) == 0) {
+                    return metric;
+                }
+            }
+        }
+        return null;
+    }
+
+    /* Helper method to convert local JSON to POJO */
+    private Output convertJson(String filePath) {
+
+        // read from .json file locally and convert to POJO
+        Gson gson = new Gson();
+        JsonReader reader = null;
+
+        try {
+            reader = new JsonReader(new FileReader(filePath));
+            System.out.println(reader.toString());
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // pick the group that is requested
+        return gson.fromJson(reader, Output.class);
     }
 }
