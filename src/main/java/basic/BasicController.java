@@ -17,16 +17,14 @@ import com.google.gson.stream.JsonReader;
 public class BasicController {
 
     // constants
-    public static final String JSON_PATH =
-            "/Users/bhaskar/Development/SpringBootApp/src/main/java/basic/files/arbit.json";
-    // colors
+    public static final String JSON_PATH = "/files/arbit.json";
     public final String RED = "red";
-    public final String YELLOW = "yellow";
-    public final String GREEN = "green";
 
     @RequestMapping("/hello")
     public String hello() {
-        return new String("Hello there!");
+        final String dir = System.getProperty("user.dir");
+        // return new String("Hello there!");
+        return dir;
     }
 
     @RequestMapping("/group")
@@ -100,14 +98,18 @@ public class BasicController {
     }
 
     /* Helper method to convert local JSON to POJO */
-    private Output convertJson(String filePath) {
+    private Output convertJson(String relativePath) {
+
+        // find current directory
+        String fullPath = System.getProperty("user.dir") + relativePath;
+
 
         // read from .json file locally and convert to POJO
         Gson gson = new Gson();
         JsonReader reader = null;
 
         try {
-            reader = new JsonReader(new FileReader(filePath));
+            reader = new JsonReader(new FileReader(fullPath));
             System.out.println(reader.toString());
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
