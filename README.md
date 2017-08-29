@@ -40,6 +40,7 @@ This is primarily to check if the service is up and running. This should return 
 Here Group-Name indicates the desired name of the group details desired.
 
 ***Example***
+
 `GET localhost:8080/group?name=memory`
 
 This should prompt the Response
@@ -76,6 +77,7 @@ This should return an Error Response
 Here Metric-Name indicares the desired name of the metric desired.
 
 ***Example***
+
 `GET http://localhost:8080/metric?name=proc.stat.cpu__user_cumulative`
 
 This should prompt the Response
