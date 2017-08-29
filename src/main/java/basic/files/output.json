@@ -1,0 +1,786 @@
+{
+  "canary_output": {
+    "canaryId": 23,
+    "version2name": "testspinnaker-tspcluster-canary",
+    "canaryFinalColor": "yellow",
+    "endDate": "19 May 2017 11:10:39 GMT",
+    "canaryStatus": "Warning",
+    "launchedDate": "19 May 2017 10:40:39 GMT",
+    "health": "HEALTHY",
+    "maximumCanaryScore": "90",
+    "leastRelevance": 4,
+    "duration": 30,
+    "canaryFinalScore": "83.33",
+    "name": "opsmx",
+    "version1name": "testspinnaker-tspcluster-baseline",
+    "results": [
+      {
+        "groupColor": "yellow",
+        "groupScore": 83.333336,
+        "groupBucketScore": {
+          "bucket2": "83.33",
+          "bucket3": "83.33",
+          "bucket1": "83.33"
+        },
+        "groupRelevance": 1,
+        "name": "Memory Group",
+        "metricList": [
+          {
+            "metricType": "Memory Group",
+            "metricScore": 0,
+            "metricName": "proc.meminfo.memfree",
+            "stats": {
+              "version2": {
+                "Mean": 278510016,
+                "Min": 201090000,
+                "Max": 371180000,
+                "3rdQuantile": 329760000,
+                "1stQuantile": 239220000,
+                "Median": 283460000
+              },
+              "version1": {
+                "Mean": 345680000,
+                "Min": 342310016,
+                "Max": 353110016,
+                "3rdQuantile": 346670016,
+                "1stQuantile": 344230016,
+                "Median": 344689984
+              }
+            },
+            "metricColor": "red",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              0,
+              "bucket2",
+              0,
+              "bucket3",
+              0
+            ],
+            "relevance": 1
+          },
+          {
+            "metricType": "Memory Group",
+            "metricScore": 100,
+            "metricName": "proc.vmstat.pswpin",
+            "stats": {
+              "version2": {
+                "Mean": 0,
+                "Min": 0,
+                "Max": 0,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              },
+              "version1": {
+                "Mean": 0,
+                "Min": 0,
+                "Max": 0,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 3
+          },
+          {
+            "metricType": "Memory Group",
+            "metricScore": 100,
+            "metricName": "proc.meminfo.memtotal",
+            "stats": {
+              "version2": {
+                "Mean": 1040700030,
+                "Min": 1040700030,
+                "Max": 1040700030,
+                "3rdQuantile": 1040700030,
+                "1stQuantile": 1040700030,
+                "Median": 1040700030
+              },
+              "version1": {
+                "Mean": 1040700030,
+                "Min": 1040700030,
+                "Max": 1040700030,
+                "3rdQuantile": 1040700030,
+                "1stQuantile": 1040700030,
+                "Median": 1040700030
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 3
+          },
+          {
+            "metricType": "Memory Group",
+            "metricScore": 100,
+            "metricName": "proc.vmstat.pgfault_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 308.71,
+                "Min": 0,
+                "Max": 2030,
+                "3rdQuantile": 679.2,
+                "1stQuantile": 6.6,
+                "Median": 15.2
+              },
+              "version1": {
+                "Mean": 309.14,
+                "Min": 0,
+                "Max": 1891.4,
+                "3rdQuantile": 676.2,
+                "1stQuantile": 5.6,
+                "Median": 14.4
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          },
+          {
+            "metricType": "Memory Group",
+            "metricScore": 100,
+            "metricName": "proc.vmstat.pswpout",
+            "stats": {
+              "version2": {
+                "Mean": 0,
+                "Min": 0,
+                "Max": 0,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              },
+              "version1": {
+                "Mean": 0,
+                "Min": 0,
+                "Max": 0,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 3
+          },
+          {
+            "metricType": "Memory Group",
+            "metricScore": 100,
+            "metricName": "proc.meminfo.swapfree",
+            "stats": {
+              "version2": {
+                "Mean": 0,
+                "Min": 0,
+                "Max": 0,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              },
+              "version1": {
+                "Mean": 0,
+                "Min": 0,
+                "Max": 0,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 3
+          }
+        ],
+        "groupsSuccessMetricCount": 6
+      },
+      {
+        "groupColor": "green",
+        "groupScore": 100,
+        "groupBucketScore": {
+          "bucket2": "100",
+          "bucket3": "100",
+          "bucket1": "100"
+        },
+        "groupRelevance": 2,
+        "name": "Load",
+        "metricList": [
+          {
+            "metricType": "Load",
+            "metricScore": 100,
+            "metricName": "apache.requests",
+            "stats": {
+              "version2": {
+                "Mean": 1.6536,
+                "Min": 1,
+                "Max": 3,
+                "3rdQuantile": 2,
+                "1stQuantile": 1,
+                "Median": 2
+              },
+              "version1": {
+                "Mean": 1.6564,
+                "Min": 1,
+                "Max": 3,
+                "3rdQuantile": 2,
+                "1stQuantile": 1,
+                "Median": 2
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          }
+        ],
+        "groupsSuccessMetricCount": 1
+      },
+      {
+        "groupColor": "green",
+        "groupScore": 100,
+        "groupBucketScore": {
+          "bucket2": "100",
+          "bucket3": "100",
+          "bucket1": "100"
+        },
+        "groupRelevance": 3,
+        "name": "Network Group",
+        "metricList": [
+          {
+            "metricType": "Network Group",
+            "metricScore": 100,
+            "metricName": "proc.net.bytes__eth0_out_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 7679.7,
+                "Min": 0,
+                "Max": 16697,
+                "3rdQuantile": 10114,
+                "1stQuantile": 5646.8,
+                "Median": 7964.6
+              },
+              "version1": {
+                "Mean": 7618.7,
+                "Min": 0,
+                "Max": 17249,
+                "3rdQuantile": 9621.6,
+                "1stQuantile": 5571.3,
+                "Median": 8159.6
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 3
+          },
+          {
+            "metricType": "Network Group",
+            "metricScore": 100,
+            "metricName": "proc.net.packets__eth0_in_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 8.9825,
+                "Min": 0,
+                "Max": 25.2,
+                "3rdQuantile": 13.6,
+                "1stQuantile": 4.6,
+                "Median": 6.8
+              },
+              "version1": {
+                "Mean": 8.8597,
+                "Min": 0,
+                "Max": 24.2,
+                "3rdQuantile": 13.2,
+                "1stQuantile": 4.8,
+                "Median": 6.8
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 4
+          },
+          {
+            "metricType": "Network Group",
+            "metricScore": 100,
+            "metricName": "proc.net.packets__eth0_out_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 10.224,
+                "Min": 0,
+                "Max": 27.2,
+                "3rdQuantile": 17.4,
+                "1stQuantile": 4.8,
+                "Median": 6.7
+              },
+              "version1": {
+                "Mean": 10.266,
+                "Min": 0,
+                "Max": 27.8,
+                "3rdQuantile": 17.8,
+                "1stQuantile": 5,
+                "Median": 7.2
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 4
+          },
+          {
+            "metricType": "Network Group",
+            "metricScore": 100,
+            "metricName": "proc.net.bytes__eth0_in_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 2047.2,
+                "Min": 0,
+                "Max": 6069.2,
+                "3rdQuantile": 3043.1,
+                "1stQuantile": 372.95,
+                "Median": 1750.2
+              },
+              "version1": {
+                "Mean": 2050.1,
+                "Min": 0,
+                "Max": 5998,
+                "3rdQuantile": 2888.5,
+                "1stQuantile": 379.9,
+                "Median": 1765
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 3
+          }
+        ],
+        "groupsSuccessMetricCount": 4
+      },
+      {
+        "groupColor": "yellow",
+        "groupScore": 66.666664,
+        "groupBucketScore": {
+          "bucket2": "66.67",
+          "bucket3": "66.67",
+          "bucket1": "66.67"
+        },
+        "groupRelevance": 2,
+        "name": "Compute KPI",
+        "metricList": [
+          {
+            "metricType": "Compute KPI",
+            "metricScore": 100,
+            "metricName": "proc.stat.cpu__system_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 0.15503,
+                "Min": 0,
+                "Max": 0.8,
+                "3rdQuantile": 0.2,
+                "1stQuantile": 0,
+                "Median": 0.2
+              },
+              "version1": {
+                "Mean": 0.12906,
+                "Min": 0,
+                "Max": 0.8,
+                "3rdQuantile": 0.2,
+                "1stQuantile": 0,
+                "Median": 0
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          },
+          {
+            "metricType": "Compute KPI",
+            "metricScore": 100,
+            "metricName": "proc.stat.cpu__user_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 0.53669,
+                "Min": 0,
+                "Max": 3.4,
+                "3rdQuantile": 0.8,
+                "1stQuantile": 0.2,
+                "Median": 0.4
+              },
+              "version1": {
+                "Mean": 0.47911,
+                "Min": 0,
+                "Max": 1.6,
+                "3rdQuantile": 0.6,
+                "1stQuantile": 0.2,
+                "Median": 0.4
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          },
+          {
+            "metricType": "Compute KPI",
+            "metricScore": 0,
+            "metricName": "proc.loadavg.1min",
+            "stats": {
+              "version2": {
+                "Mean": 0.024777,
+                "Min": 0,
+                "Max": 0.24,
+                "3rdQuantile": 0.03,
+                "1stQuantile": 0,
+                "Median": 0
+              },
+              "version1": {
+                "Mean": 0.007688,
+                "Min": 0,
+                "Max": 0.1,
+                "3rdQuantile": 0,
+                "1stQuantile": 0,
+                "Median": 0
+              }
+            },
+            "metricColor": "red",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              0,
+              "bucket2",
+              0,
+              "bucket3",
+              0
+            ],
+            "relevance": 2
+          }
+        ],
+        "groupsSuccessMetricCount": 3
+      },
+      {
+        "groupColor": "green",
+        "groupScore": 100,
+        "groupBucketScore": {
+          "bucket2": "100",
+          "bucket3": "100",
+          "bucket1": "100"
+        },
+        "groupRelevance": 2,
+        "name": "Response",
+        "metricList": [
+          {
+            "metricType": "Response",
+            "metricScore": 100,
+            "metricName": "apache.responsetime",
+            "stats": {
+              "version2": {
+                "Mean": 1.6536,
+                "Min": 1,
+                "Max": 3,
+                "3rdQuantile": 2,
+                "1stQuantile": 1,
+                "Median": 2
+              },
+              "version1": {
+                "Mean": 1.6564,
+                "Min": 1,
+                "Max": 3,
+                "3rdQuantile": 2,
+                "1stQuantile": 1,
+                "Median": 2
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          }
+        ],
+        "groupsSuccessMetricCount": 1
+      },
+      {
+        "groupColor": "yellow",
+        "groupScore": 73.33333,
+        "groupBucketScore": {
+          "bucket2": "80",
+          "bucket3": "80",
+          "bucket1": "60"
+        },
+        "groupRelevance": 2,
+        "name": "Service Group",
+        "metricList": [
+          {
+            "metricType": "Service Group",
+            "metricScore": 100,
+            "metricName": "apache.Activity_Bytes_per_req",
+            "stats": {
+              "version2": {
+                "Mean": 3198.8,
+                "Min": 1467.2,
+                "Max": 3567.2,
+                "3rdQuantile": 3507.1,
+                "1stQuantile": 3059,
+                "Median": 3370.5
+              },
+              "version1": {
+                "Mean": 3130.1,
+                "Min": 1365.3,
+                "Max": 3530.8,
+                "3rdQuantile": 3449,
+                "1stQuantile": 2993.1,
+                "Median": 3318
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          },
+          {
+            "metricType": "Service Group",
+            "metricScore": 100,
+            "metricName": "apache.Resource_Utilization_CPU_Load",
+            "stats": {
+              "version2": {
+                "Mean": 0.049073,
+                "Min": 0.038023,
+                "Max": 0.052292,
+                "3rdQuantile": 0.050884,
+                "1stQuantile": 0.048398,
+                "Median": 0.050035
+              },
+              "version1": {
+                "Mean": 0.045745,
+                "Min": 0.037618,
+                "Max": 0.048387,
+                "3rdQuantile": 0.04722,
+                "1stQuantile": 0.044638,
+                "Median": 0.04658
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          },
+          {
+            "metricType": "Service Group",
+            "metricScore": 66.666664,
+            "metricName": "apache.Activity_Bytes_per_min",
+            "stats": {
+              "version2": {
+                "Mean": 16.736,
+                "Min": 6.4759,
+                "Max": 19.247,
+                "3rdQuantile": 18.811,
+                "1stQuantile": 15.679,
+                "Median": 17.809
+              },
+              "version1": {
+                "Mean": 16.28,
+                "Min": 5.9362,
+                "Max": 18.996,
+                "3rdQuantile": 18.392,
+                "1stQuantile": 15.2,
+                "Median": 17.427
+              }
+            },
+            "metricColor": "yellow",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              0,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          },
+          {
+            "metricType": "Service Group",
+            "metricScore": 0,
+            "metricName": "apache.Activity_Type_Sending_Reply",
+            "stats": {
+              "version2": {
+                "Mean": 29,
+                "Min": 29,
+                "Max": 29,
+                "3rdQuantile": 29,
+                "1stQuantile": 29,
+                "Median": 29
+              },
+              "version1": {
+                "Mean": 33,
+                "Min": 33,
+                "Max": 33,
+                "3rdQuantile": 33,
+                "1stQuantile": 33,
+                "Median": 33
+              }
+            },
+            "metricColor": "red",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              0,
+              "bucket2",
+              0,
+              "bucket3",
+              0
+            ],
+            "relevance": 3
+          },
+          {
+            "metricType": "Service Group",
+            "metricScore": 100,
+            "metricName": "apache.Activity_Total_Traffic_cumulative",
+            "stats": {
+              "version2": {
+                "Mean": 1.2071,
+                "Min": 0,
+                "Max": 3,
+                "3rdQuantile": 2.8,
+                "1stQuantile": 0.2,
+                "Median": 0.2
+              },
+              "version1": {
+                "Mean": 1.2097,
+                "Min": 0,
+                "Max": 3,
+                "3rdQuantile": 2.8,
+                "1stQuantile": 0.2,
+                "Median": 0.2
+              }
+            },
+            "metricColor": "green",
+            "metricError": "No error",
+            "bucketscores": [
+              "bucket1",
+              100,
+              "bucket2",
+              100,
+              "bucket3",
+              100
+            ],
+            "relevance": 2
+          }
+        ],
+        "groupsSuccessMetricCount": 5
+      }
+    ],
+    "minimumCanaryScore": "60",
+    "status": "COMPLETED",
+    "healthMessage": "Canary Is HEALTHY"
+  }
+}
