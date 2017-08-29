@@ -7,12 +7,15 @@ To run on your particular machine it requires JDK 1.8 or higher and Maven 3.0 an
 ## Run the App 
 
 Download the project
+
 `git clone https://github.com/sher-locked/SpringBootApp`
 
 Build the project and create the project's JAR
+
 `mvn clean install`
 
 Run the target JAR
+
 `java -jar target/gs-rest-service-0.1.0.jar`
 
 The app should now be running on localhost on port 8080.
@@ -20,11 +23,14 @@ The app should now be running on localhost on port 8080.
 ## API Endpoints
 
 The App has 3 REST API Endpoints.
+
+
 **1. Dummy Endpoint**
 `GET localhost:8080/hello`
 
 This is primarily to check if the service is up and running. This should return a simple String response.
 `RESPONSE 200 Hello there!`
+
 
 **2. Get Group Detais by Name**
 `GET localhost:8080/group?name={group-name}`
@@ -58,6 +64,7 @@ This should return an Error Response
    }
 }
 ```
+
 
 **3. Get Metric Details by Name**
 `GET localhost:8080/metric?name={metric-name}`
