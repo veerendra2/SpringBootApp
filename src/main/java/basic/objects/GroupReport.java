@@ -1,15 +1,26 @@
 package basic.objects;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /*
  * POJO encompassing a Group Report
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class GroupReport {
 
     /* Attributes */
     private String groupName;
-    private int numberOfFailedMetrics;
-    private float groupScore;
+    private Integer numberOfFailedMetrics;
+    private Float groupScore;
     private Error error;
+
+    /* Constructor to initialize with null values */
+    public GroupReport() {
+        this.groupName = null;
+        this.numberOfFailedMetrics = null;
+        this.groupScore = null;
+        this.error = null;
+    }
 
     /* Accessors */
 
@@ -20,17 +31,17 @@ public class GroupReport {
         this.groupName = groupName;
     }
 
-    public int getNumberOfFailedMetrics() {
+    public Integer getNumberOfFailedMetrics() {
         return numberOfFailedMetrics;
     }
-    public void setNumberOfFailedMetrics(int numberOfFailedMetrics) {
+    public void setNumberOfFailedMetrics(Integer numberOfFailedMetrics) {
         this.numberOfFailedMetrics = numberOfFailedMetrics;
     }
 
-    public float getGroupScore() {
+    public Float getGroupScore() {
         return groupScore;
     }
-    public void setGroupScore(float groupScore) {
+    public void setGroupScore(Float groupScore) {
         this.groupScore = groupScore;
     }
 

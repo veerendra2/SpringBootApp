@@ -10,6 +10,7 @@ public class Metric {
     private String metricName;
     private String metricScore;
     private String metricColor;
+    private String relevance;
     private String metricError;
 
     /* Accessors */
@@ -24,6 +25,9 @@ public class Metric {
     }
     public String getMetricColor() {
         return metricColor;
+    }
+    public String getRelevance() {
+        return relevance;
     }
     public String getMetricError() {
         return metricError;

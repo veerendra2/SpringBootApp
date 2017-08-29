@@ -30,7 +30,7 @@ public class BasicController {
     }
 
     @RequestMapping("/group")
-    public GroupReport findGroup(@RequestParam(value="name") String groupNameString) {
+    public GroupReport returnGroupReport(@RequestParam(value="name") String groupNameString) {
 
         // read from .json file locally and convert to POJO
         GroupReport groupReport = new GroupReport();
@@ -51,35 +51,52 @@ public class BasicController {
                 groupReport.setGroupName(group.getName());
                 groupReport.setNumberOfFailedMetrics(failedMetrics);
                 groupReport.setGroupScore(group.getGroupScore());
-                groupReport.setError(null);
 
                 return groupReport;
             }
         }
 
-        // no such group found
+        // no such group found, return respective error
         Error error = new Error();
         error.setErrorMessage("No such group found");
         error.setErrorCode(404);
         groupReport.setError(error);
+
         return groupReport;
     }
 
     @RequestMapping("/metric")
-    public Metric findMetric(@RequestParam(value="name") String metricName) {
+    public MetricReport returnMetricReport(@RequestParam(value="name") String metricName) {
 
         // read from .json file locally and convert to POJO
+        MetricReport metricReport = new MetricReport();
         Output data = convertJson(JSON_PATH);
         List<Group> groups = data.getResults();
+
         for (Group group : groups) {
             List<Metric> metrics = group.getMetricList();
             for (Metric metric : metrics) {
                 if (metric.getMetricName().compareTo(metricName) == 0) {
-                    return metric;
+                    // return metric;
+
+                    // found metric we are looking for
+                    metricReport.setMetricType(metric.getMetricType());
+                    metricReport.setMetricName(metric.getMetricName());
+                    metricReport.setMetricColor(metric.getMetricColor());
+                    metricReport.setRelevance(metric.getRelevance());
+
+                    return metricReport;
                 }
             }
         }
-        return null;
+
+        // no such metric found
+        Error error = new Error();
+        error.setErrorMessage("No such metric found");
+        error.setErrorCode(404);
+        metricReport.setError(error);
+
+        return metricReport;
     }
 
     /* Helper method to convert local JSON to POJO */
