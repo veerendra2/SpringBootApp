@@ -9,7 +9,7 @@ public class GroupReport {
     private String groupName;
     private int numberOfFailedMetrics;
     private float groupScore;
-    // private Error error;
+    private Error error;
 
     /* Accessors */
 
@@ -32,5 +32,12 @@ public class GroupReport {
     }
     public void setGroupScore(float groupScore) {
         this.groupScore = groupScore;
+    }
+
+    public Error getError() {
+        return error;
+    }
+    public void setError(Error error) {
+        this.error = error;
     }
 }

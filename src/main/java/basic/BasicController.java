@@ -62,7 +62,7 @@ public class BasicController {
                 groupReport.setGroupName(group.getName());
                 groupReport.setNumberOfFailedMetrics(failedMetrics);
                 groupReport.setGroupScore(group.getGroupScore());
-                // groupReport.setError(null);
+                groupReport.setError(null);
 
                 return groupReport;
             }
@@ -72,7 +72,7 @@ public class BasicController {
         Error error = new Error();
         error.setErrorMessage("No such group found");
         error.setErrorCode(404);
-        // groupReport.setError(error);
+        groupReport.setError(error);
         return groupReport;
     }
 }
