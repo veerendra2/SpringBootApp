@@ -3,7 +3,7 @@ package basic.objects;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /*
- * POJO encompassing a Group Report
+ * POJO encompassing a Group Report API Response
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class GroupReport {

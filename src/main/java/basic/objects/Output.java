@@ -2,6 +2,9 @@ package basic.objects;
 
 import java.util.List;
 
+/*
+ * POJO encompassing the JSON file output.json
+ */
 public class Output {
 
 	/* Attributes */

@@ -1,7 +1,7 @@
 package basic.objects;
 
 /*
- * POJO encompassing an API error
+ * POJO encompassing an API error response
  */
 public class Error {
 

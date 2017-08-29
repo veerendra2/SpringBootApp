@@ -13,20 +13,27 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
+/*
+ * Controller class which handles HTTP Requests
+ */
 @RestController
 public class BasicController {
 
     // constants
-    public static final String JSON_PATH = "/files/arbit.json";
+    public static final String JSON_PATH = "/files/output.json";
     public final String RED = "red";
 
+    /*
+     * Dummy method to check if Application is up
+     */
     @RequestMapping("/hello")
     public String hello() {
-        final String dir = System.getProperty("user.dir");
-        // return new String("Hello there!");
-        return dir;
+        return new String("Hello there!");
     }
 
+    /*
+     * Method checks if requested group is present and returns relevant parameters
+     */
     @RequestMapping("/group")
     public GroupReport returnGroupReport(@RequestParam(value="name") String groupNameString) {
 
@@ -63,6 +70,9 @@ public class BasicController {
         return groupReport;
     }
 
+    /*
+     * Method checks if requested metric is present and returns relevant parameters
+     */
     @RequestMapping("/metric")
     public MetricReport returnMetricReport(@RequestParam(value="name") String metricName) {
 
