@@ -8,7 +8,7 @@ public class Output {
 	String canaryId;
 	String health;
 	String canaryFinalScore;
-	List<Result> results;
+	List<Group> results;
 
 	/* Accessors */
 	public String getCanaryId() {
@@ -20,7 +20,7 @@ public class Output {
 	public String getCanaryFinalScore() {
 		return canaryFinalScore;
 	}
-	public List<Result> getResults() {
+	public List<Group> getResults() {
 		return results;
 	}
 }
