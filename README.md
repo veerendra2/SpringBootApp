@@ -4,11 +4,13 @@ SpringBootApp is a basic REST API which provides an interface to check for the h
 
 To run on your particular machine it requires JDK 1.8 or higher and Maven 3.0 and higher. Below listed is how to run the App and how to use the API.
 
+A fork repo of [sher-locked/spring-boot-app](https://github.com/sher-locked/spring-boot-app)
+
 ## Run the App 
 
 Download the project
 
-`git clone https://github.com/sher-locked/SpringBootApp`
+`git clone https://github.com/veerendra2/SpringBootApp.git`
 
 Build the project and create the project's JAR
 
@@ -27,10 +29,10 @@ The App has 3 REST API Endpoints.
 
 **1. Dummy Endpoint**
 
-`GET localhost:8080/hello`
+`GET localhost:8080`
 
 This is primarily to check if the service is up and running. This should return a simple String response.
-`RESPONSE 200 Hello there!`
+`RESPONSE 200 Your Application is working!`
 
 
 **2. Get Group Detais by Name**
