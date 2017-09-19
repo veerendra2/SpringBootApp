@@ -26,9 +26,9 @@ public class BasicController {
     /*
      * Dummy method to check if Application is up
      */
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String hello() {
-        return new String("Hello there!");
+        return new String("Your application is working!\n\n");
     }
 
     /*

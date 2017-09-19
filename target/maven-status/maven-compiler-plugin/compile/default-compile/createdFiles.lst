@@ -1,0 +1,8 @@
+basic/BasicController.class
+basic/objects/MetricReport.class
+basic/objects/Error.class
+basic/objects/Metric.class
+basic/objects/Group.class
+basic/objects/Output.class
+basic/Application.class
+basic/objects/GroupReport.class
